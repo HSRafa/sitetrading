@@ -1,0 +1,240 @@
+/* Reseta as margens e o padding de todos os elementos */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura total do elemento */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define a fonte padrão da página */
+}
+
+/* Configurações gerais para o html e body */
+html, body {
+    height: 100%; /* Ocupa 100% da altura da tela */
+    overflow-y: hidden; /* Desativa o scroll vertical */
+    overflow-x: hidden; /* Desativa o scroll horizontal */
+}
+
+/* Estilização da seção principal */
+.section {
+    position: relative; /* Permite que elementos absolutos sejam posicionados em relação a este container */
+    width: 100%; /* Ocupa toda a largura da tela */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da tela */
+    padding: 100px; /* Adiciona espaço interno na seção */
+    display: flex; /* Usa Flexbox para layout */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça os itens igualmente entre si */
+    overflow: hidden; /* Oculta qualquer conteúdo que transborde */
+    min-width: 300px; /* Largura mínima do container */
+    max-width: 1000px; /* Largura máxima do container */
+}
+
+/* Círculo de fundo na seção */
+.circle {
+    position: absolute; /* Permite que o círculo seja posicionado em relação à seção */
+    top: 0; /* Alinha ao topo da seção */
+    left: 0; /* Alinha à esquerda da seção */
+    width: 100%; /* Largura total da seção */
+    height: 100%; /* Altura total da seção */
+    background-color: #3a3a3a; /* Cor de fundo do círculo */
+    clip-path: circle(50% at bottom right); /* Cria uma forma de círculo na parte inferior direita */
+    margin: auto; /* Centraliza o círculo */
+}
+
+/* Estilização do cabeçalho */
+header {
+    height: 200px; /* Define a altura do cabeçalho */
+    padding: 20px 0px; /* Adiciona espaço interno vertical */
+    min-width: 150px; /* Largura mínima do cabeçalho */
+    max-width: 1000px; /* Largura máxima do cabeçalho */
+}
+
+/* Centraliza conteúdo no cabeçalho */
+.center {
+    position: absolute; /* Permite posicionamento absoluto em relação ao cabeçalho */
+    top: 0; /* Alinha ao topo do cabeçalho */
+    left: 0; /* Alinha à esquerda do cabeçalho */
+    width: 100%; /* Ocupa toda a largura do cabeçalho */
+    padding: 40px 100px; /* Adiciona espaço interno */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilização do logo */
+.logo {
+    max-width: 150px; /* Largura máxima do logo */
+}
+
+/* Efeito hover no logo */
+.logo:hover {
+    transition: 0.1s ease-in-out; /* Transição suave ao passar o mouse */
+    transform: translateY(-10px); /* Move o logo para cima ao passar o mouse */
+}
+
+/* Estilização do menu */
+.menu {
+    position: absolute; /* Permite posicionamento absoluto em relação ao header */
+    display: block; /* Exibe como bloco */
+    left: 50%; /* Alinha ao centro horizontalmente */
+    top: 0%; /* Alinha ao topo do cabeçalho */
+    width: 100%; /* Ocupa toda a largura do cabeçalho */
+    padding: 70px 100px; /* Adiciona espaço interno */
+    margin-left: 100px; /* Margem à esquerda */
+    display: flex; /* Usa Flexbox para itens do menu */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    gap: 35px; /* espaçamento entre os itens */
+}
+
+/* Estilização dos links do menu */
+.menu a {
+    color: black; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    margin-right: 40px; /* Margem à direita entre os links */
+    font-size: 25px; /* Tamanho da fonte dos links */
+}
+
+/* Efeito hover nos links do menu */
+.menu a:hover {
+    color: #2508ca96; /* Altera a cor do texto ao passar o mouse */
+    transition: 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+    transform: translateY(-10px); /* Move o link para cima ao passar o mouse */
+}
+
+/* Estilização do container principal */
+.container {
+    position: relative; /* Permite que elementos absolutos sejam posicionados em relação a este container */
+    width: 100%; /* Ocupa toda a largura do container */
+    display: flex; /* Usa Flexbox para layout */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaça os itens igualmente */
+}
+
+/* Estilização do texto na seção */
+.container .text { /* TEXTOS GLOBAIS */
+    position: relative; /* Permite posicionamento relativo */
+    max-width: 600px; /* Largura máxima do bloco de texto */
+    margin-right: 20; /* Margem à direita (pode ser removida se não for necessário) */
+    left: 350px; /* Move o texto para a direita */
+    max-width: 600px; /* Largura máxima do bloco de texto (repetido, pode ser removido) */
+    margin-right: 20px; /* Margem à direita (repetido, pode ser removido) */
+}
+
+span{
+    text-shadow: 5px 5px 20px black;
+}
+
+/* Estilização do título no texto */
+.container .text h1 {
+    font-size: 54px; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Margem inferior do título */
+    line-height: 70px; /* Altura da linha do título */
+    font-weight: 700; /* Negrito para o título */
+    text-align: justify; /* Justifica o texto do título */
+}
+
+/* Estilização do parágrafo no texto */
+.container .text p {
+    position: relative; /* Permite posicionamento relativo */
+    line-height: 20px; /* Altura da linha */
+    font-weight: 150; /* Peso da fonte */
+    margin-bottom: 30px; /* Margem inferior do parágrafo */
+    font-weight: bold; /* Negrito para o parágrafo */
+    font-size: 15px; /* Tamanho da fonte do parágrafo */
+    text-align: justify; /* Justifica o texto do parágrafo */
+}
+
+/* Estilização do botão "Saiba Mais" */
+.container .text a { 
+    display: inline-block; /* Permite definir largura e altura */
+    margin-top: 10px; /* Margem superior */
+    padding: 10px 30px; /* Espaço interno do botão */
+    background-color: #2600ff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    font-weight: 1000; /* Define o peso da fonte como negrito (repetido, pode ser removido) */
+    text-decoration: none; /* Remove sublinhado do botão */
+    letter-spacing: 1px; /* Espaçamento entre letras do botão */
+    border-radius: 50px; /* Bordas arredondadas do botão */
+    transition: 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+    text-align: justify; /* Justifica o texto do botão (não tem efeito em um link) */
+    font-size: 18px;
+}
+
+/* Efeito hover no botão "Saiba Mais" */
+.container .text a:hover {
+    transform: translateY(-10px); /* Move o botão para cima ao passar o mouse */
+    background-color: #4e4e4e; /* Altera a cor de fundo ao passar o mouse */
+    color: white;
+    transition: 0.3s ease-in-out; /* Transição suave */
+    box-shadow: 10px 10px 20px black;
+}
+
+/* Estilização dos ícones */
+.icons { /* ICONES GLOBAIS */
+    position: absolute; /* Permite posicionamento absoluto */
+    bottom: 40px; /* Alinha os ícones ao fundo da seção */
+    left: 350px; /* Move os ícones para a direita */
+    display: flex; /* Usa Flexbox para layout */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilização dos links dos ícones */
+.icons a {
+    display: inline-block; /* Permite definir largura e altura dos ícones */
+    width: 60px; /* Largura fixa do ícone */
+    height: 60px; /* Altura fixa do ícone */
+    border-radius: 50%; /* Bordas arredondadas para ícones */
+    background-color: white; /* Cor de fundo do ícone */
+    margin-left: 45px; /* Margem à esquerda entre ícones */
+    display: flex; /* Usa Flexbox para itens dentro do ícone */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    transition: 0.4s ease-in-out; /* Transição suave ao passar o mouse */
+    opacity: 0.7; /* Define a opacidade inicial dos ícones */
+}
+
+/* Efeito hover nos ícones */
+.icons a:hover {
+    transform: translateY(-15px); /* Move o ícone para cima ao passar o mouse */
+    opacity: 100; /* Aumenta a opacidade ao passar o mouse */
+    box-shadow: 10px 10px 20px black;
+}
+
+/* Estilização das imagens */
+.boximg {
+    position: absolute; /* Permite posicionamento absoluto */
+    right: 0; /* Alinha à direita da seção */
+    bottom: -40px; /* Move para baixo da seção */
+    width: 100%; /* Ocupa toda a largura do container de imagens */
+    min-width: 500px; /* Largura mínima das imagens */
+    max-width: 750px; /* Largura máxima das imagens */
+}
+
+/* Estilização da primeira imagem */
+.boximg .img1 {
+    position: absolute; /* Permite posicionamento absoluto em relação ao container */
+    left: -400px; /* Move a imagem para a esquerda */
+    bottom: 0px; /* Alinha ao fundo do container */
+    width: 85%; /* Define a largura da imagem */
+    min-width: 500px; /* Largura mínima da imagem */
+    max-width: 1000px; /* Largura máxima da imagem */
+}
+
+/* Estilização da segunda imagem */
+.boximg .img2 {
+    position: relative; /* Permite posicionamento relativo */
+    right: 0%; /* Mantém a posição original */
+    width: 100%; /* Ocupa toda a largura do container */
+    min-width: 500px; /* Largura mínima da imagem */
+    max-width: 750px; /* Largura máxima da imagem */
+}
+
+/* Estilização da terceira imagem */
+.boximg .img3 {
+    position: absolute; /* Permite posicionamento absoluto */
+    right: 1570px; /* Move a imagem para a direita */
+    width: 100%; /* Ocupa toda a largura do container */
+    min-width: 500px; /* Largura mínima da imagem */
+    max-width: 750px; /* Largura máxima da imagem */
+}

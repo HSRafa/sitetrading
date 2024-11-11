@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+   /* background-color: #caa308a4;*/
+   background-image: url('../img/fotodefundo2');
+   background-size: cover; /* Cobre toda a área do elemento */
+   background-position: center; /* Centraliza a imagem */
+   background-repeat: no-repeat; /* Não repete a imagem */
+   min-height: 100vh; /* Garante que o elemento tenha pelo menos a altura total da tela */
+   display: flex; /* Flexbox para centralizar conteúdo */
+   align-items: center; /* Alinha verticalmente */
+   justify-content: center; /* Alinha horizontalmente */
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #ffffffe8;
+    border-bottom-left-radius: 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px; /* Adicionado padding para espaçamento */
+    display: flex; /* Utiliza Flexbox para layout */
+    align-items: center; /* Alinha itens verticalmente no centro */
+    justify-content: space-around; /* Espaça entre logo e menu */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+}
+
+.logo {
+    max-width: 250px;  
+    padding-top: 20px;
+    margin: 0;
+    
+}
+
+.logo:hover {
+    transition: 0.1s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.menu {
+    display: flex; /* Utiliza Flexbox para itens do menu */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    padding-left: 15px;
+    gap: 35px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem; /* Usando rem para tamanho responsivo */
+    padding: 15px; /* Ajustado para melhor espaçamento */
+}
+
+.menu a:hover {
+    color: #2600ff;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.foco {
+    position: relative;
+    display: flex; /* Define o contêiner como Flexbox */
+    justify-content: space-between; /* Espaça os elementos */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #ffffffa2;
+    width: 96.5%;
+    height: 55%;
+    padding: 15px;
+    margin: 45px auto;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.pc-banner {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 55px;
+    background-color: #2508ca96;
+}
+
+.escrita-banner {
+    padding: 30px; /* Espaçamento interno para garantir que o fundo cubra todos os elementos */
+    margin: 0 auto; /* Centraliza o contêiner e remove margens externas */
+    width: fit-content; /* Ajusta a largura ao conteúdo, remova se não desejar essa limitação */
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 55px; /* Arredonda as bordas do fundo branco */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    padding-top: 15px;
+    padding-bottom: 35px;
+    margin: 20px;
+
+}
+
+.escrita-banner h1 {
+    font-size: 35px;
+    margin-bottom: 15px; /* Ajuste conforme necessário */
+}
+
+.escrita-banner p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    text-indent: 30px;
+    background-color: #ffffffbe;
+    color: black;
+    box-shadow: 10px 10px 30px black;
+    border-radius: 20px;
+    padding: 5px;
+    line-height: 30px;
+}
+
+.escrita-banner h2 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.escrita-banner a{
+    display: inline-block; /* Permite definir largura e altura */
+    margin-top: 35px; /* Margem superior */
+    padding: 10px 50px; /* Espaço interno do botão */
+    background-color: #2600ff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    font-weight: 800; /* Define o peso da fonte como negrito (repetido, pode ser removido) */
+    text-decoration: none; /* Remove sublinhado do botão */
+    letter-spacing: 2px; /* Espaçamento entre letras do botão */
+    border-radius: 50px; /* Bordas arredondadas do botão */
+    transition: 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+    text-align: justify; /* Justifica o texto do botão (não tem efeito em um link) */
+    text-align: right
+}
+
+.escrita-banner a:hover{
+    transform: translateY(-10px); /* Move o botão para cima ao passar o mouse */
+    background-color: #4e4e4e; /* Altera a cor de fundo ao passar o mouse */
+    transition: 0.3s ease-in-out; /* Transição suave */
+    box-shadow: 10px 10px 20px black;
+}
+
+
+/* Estilos do contêiner que envolve os blocos */
+.container {
+    display: flex; /* Utiliza Flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (se necessário) */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    min-height: 100vh; /* Garante que o contêiner ocupe toda a altura da tela */
+}
+
+/* Estilos do bloco .smc */
+.smc {
+    display: block; /* Mantém o bloco como elemento de bloco */
+    background-color: #ffffffe1; /* Cor de fundo */
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1); /* Sombra */
+    min-width: 300px; /* Largura mínima */
+    max-width: 800px; /* Largura máxima */
+    padding: 35px; /* Espaço interno */
+    margin: 20px; /* Margem ao redor do bloco */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+}
+
+/* Estilos dos títulos e textos dentro do bloco */
+.smc , .smc h2, .smc p, .smc ul {
+    text-align: left; /* Alinhamento do texto */
+    margin: 10px 0; /* Margens para separar os elementos */
+}
+
+.smc h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Estilos semelhantes para .ict e .dicas */
+.ict, .dicas {
+    background-color: #ffffffe1; /* Cor de fundo */
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1); /* Sombra */
+    min-width: 300px; /* Largura mínima */
+    max-width: 800px; /* Largura máxima */
+    padding: 35px; /* Espaço interno */
+    margin: 20px; /* Margem ao redor do bloco */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+}
+
+/* Títulos e textos em ict e dicas */
+.ict h1, .dicas h1,
+.ict h2, .dicas h2,
+.ict p, .dicas p,
+.ict ul, .dicas ul {
+    text-align: left; /* Alinhamento do texto */
+    margin: 10px 0; /* Margens para separar os elementos */
+    line-height: 30px;
+}
+
+
+.img1 p{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    justify-items: center;
+}
+
+.img1{
+    background-color: #ffffffe1;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.foco2{
+    position: relative;
+    display: flex; /* Define o contêiner como Flexbox */
+    justify-content: space-between; /* Espaça os elementos */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: rgba(255, 255, 255, 0.637);
+    width: 96.5%;
+    height: 55%;
+    padding: 15px;
+    margin: 45px auto;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.foco2 img{
+    padding: 20px;
+    margin-left: 300px;
+    justify-content: center;
+    width: 15%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.foco2 img:hover {
+    transition: 0.1s ease-in-out;
+    transform: translateY(-40px);
+}
+
+
+.escrita2 {
+    padding: 30px; /* Espaçamento interno para garantir que o fundo cubra todos os elementos */
+    margin: 0 auto; /* Centraliza o contêiner e remove margens externas */
+    width: fit-content; /* Ajusta a largura ao conteúdo, remova se não desejar essa limitação */
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 55px; /* Arredonda as bordas do fundo branco */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    padding-top: 15px;
+    padding-bottom: 35px;
+    margin: 20px;
+    max-width: 850px;
+    min-width: 850px;
+}
+
+.escrita2 h1{
+    font-size: 35px;
+    justify-content: center;
+    justify-items: center;
+    margin: 35px;
+    padding-right: 250px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+.escrita2 p{
+    font-size: 20px;
+    margin-bottom: 35px;
+    text-indent: 30px;
+    background-color: white;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.escrita2 h2{
+    font-size: 25px;
+}
+
+.escrita2 a{
+    display: inline-block; /* Permite definir largura e altura */
+    margin-top: 35px; /* Margem superior */
+    padding: 10px 50px; /* Espaço interno do botão */
+    background-color: #2600ff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    font-weight: 800; /* Define o peso da fonte como negrito (repetido, pode ser removido) */
+    text-decoration: none; /* Remove sublinhado do botão */
+    letter-spacing: 2px; /* Espaçamento entre letras do botão */
+    border-radius: 50px; /* Bordas arredondadas do botão */
+    transition: 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+    text-align: justify; /* Justifica o texto do botão (não tem efeito em um link) */
+    text-align: right
+}
+
+.escrita2 a:hover{
+    transform: translateY(-10px); /* Move o botão para cima ao passar o mouse */
+    background-color: #4e4e4e; /* Altera a cor de fundo ao passar o mouse */
+    transition: 0.3s ease-in-out; /* Transição suave */
+    box-shadow: 10px 10px 20px black;
+}
+
+footer{
+    background-color: #ffffffe1;
+    padding: 40px;
+    justify-content: center;
+    justify-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 25px;
+    padding: 45px;
+    font-weight: bolder;
+}
+
+.footer p{
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 800px) {
+    .logo{
+         padding: 50px;
+    }
+    
+     .menu {
+         padding: 50px; /* Reduz o padding em telas menores */
+         flex-direction: column; /* Coloca os itens do menu em coluna */
+         align-items: center; /* Centraliza os itens do menu */
+     }
+     
+     .menu a {
+         font-size: 1.2rem; /* Reduz o tamanho da fonte */
+     }
+
+     .foco{
+        padding: 50px; /* Reduz o padding em telas menores */
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+        align-items: center; /* Centraliza os itens do menu */ 
+     }
+ }
+
+ @media (max-width: 500px) {
+     .logo {
+         max-width: 120px; /* Reduz a largura da logo em telas menores */
+     }
+     
+     .menu a {
+         font-size: 1rem; /* Reduz ainda mais o tamanho da fonte */
+         max-width: 100px;
+     }
+ }
+
+ 

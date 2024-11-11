@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/fotodefundo2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100vw; /* Cobre toda a largura da tela */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom-left-radius: 30px;
+}
+
+.logo {
+    max-width: 250px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.logo:hover {
+    transition: 0.1s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.menu a:hover {
+    color: #2600ff;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.foco {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffa2;
+    width: 96.5%;
+    height: 55%;
+    padding: 15px;
+    margin: 45px auto;
+    border-radius: 35px;
+}
+
+.banner-op {
+    flex: 1; /* Ocupa o espaço necessário à esquerda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 35px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.banner-op img {
+    max-width: 55%; /* Ajusta o tamanho da imagem para ocupar o espaço da div */
+    max-height: 55%;
+    border-radius: 20px;
+}
+
+.escrita-banner {
+    flex: 1; /* Ocupa o espaço necessário à direita */
+    padding: 30px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 35px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    margin-left: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.escrita-banner h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.escrita-banner p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    text-indent: 30px;
+    color: black;
+    line-height: 30px;
+}
+
+.escrita-banner a {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 10px 50px;
+    background-color: #2600ff;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.escrita-banner a:hover {
+    transform: translateY(-10px);
+    background-color: #4e4e4e;
+    box-shadow: 10px 10px 20px black;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.explicacao {
+    display: block;
+    background-color: #ffffffe1;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1);
+    min-width: 300px; 
+    max-width: 800px;
+    padding: 35px;
+    margin: 150px auto; /* Centraliza horizontalmente */
+    border-radius: 20px;
+}
+
+.explicacao h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.explicacao ul {
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: black;
+    line-height: 30px;
+}
+
+.explicacao iframe {
+    width: 100%; /* Ocupa 100% da largura do bloco explicacao */
+    height: 400px; /* Altura ajustável conforme necessário */
+    border: none; /* Remove a borda padrão do iframe */
+    border-radius: 15px; /* Arredonda os cantos do iframe para combinar com o design */
+}
+
+.explicacao2{
+    display: block;
+    background-color: #ffffffe1;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1);
+    min-width: 300px; 
+    max-width: 800px;
+    padding: 35px;
+    margin: 150px auto; /* Centraliza horizontalmente */
+    border-radius: 20px;
+}
+
+
+.explicacao2 h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.explicacao2 iframe {
+    width: 100%; /* Ocupa 100% da largura do bloco explicacao */
+    height: 400px; /* Altura ajustável conforme necessário */
+    border: none; /* Remove a borda padrão do iframe */
+    border-radius: 15px; /* Arredonda os cantos do iframe para combinar com o design */
+}
+
+footer{
+    background-color: #ffffffe1;
+    padding: 40px;
+    justify-content: center;
+    justify-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 25px;
+    padding: 45px;
+    font-weight: bolder;
+}
+
+.footer p{
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bolder;
+}
